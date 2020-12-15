@@ -25,7 +25,7 @@ SECRET_KEY = '%t)*(=u7vmu8w_ef^uubfhax**_a+w8(@d+&82dc)gbf-+8c74'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['crudmy.herokuapp.com','127.0.0.1']
 
 
 # Application definition
