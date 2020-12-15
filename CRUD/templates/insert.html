@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+    
+          <div id="logo" class="pull-left">
+    <nav id="nav-menu-container">
+      
+            <ul>
+              <li><a href="{% url 'create' %}">create</a></li>
+            </ul>
+
+        </nav>
+</div></div></header>
+
+
+        {% load crispy_forms_tags %}
+ <form method="post">
+   {{form.as_p}}
+   {%csrf_token %}  
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" name="" value="upload">
+  </form>   
+
+
+<a href='/read/'>read</a>
+
+
+</body>
+</html>

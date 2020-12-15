@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title></title>
+<head></head>
+<body>
+<form method="POST"  action="/update/{{data2.id}}">{%csrf_token %} 
+  <label>firstname</label>
+  <input type="text" name="firstname" id="id" value="{{data2.firstname}}">
+  <br><label>lastname</label>
+  <input type="text" name="lastname" id="id" value="{{data2.lastname}}">
+  <br><label>salary</label>
+  <input type="text" name="salary" id="id" value="{{data2.salary}}">
+  <label>id</label>
+  <input type="text" name="id" value="{{data2.id}}">
+  <br><input type="submit" name="submit">
+
+</form>
+
+</body>

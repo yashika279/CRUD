@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+
+</head>
+<body>
+
+
+
+{% if data %}
+        <table  style="width:10%">
+           <tr><th><p>FirstName</p></th>
+                    <th><p>Lastname</p></th>
+                    <th><p>Salary</p></th>
+                </tr>
+            {% for element in data %}
+                <tr>
+                    
+                    <td><p>{{element.firstname}}</p></td>
+                    <td><p>{{element.lastname}}</p></td>
+                    <td><p>{{element.salary}}</p></td>
+                    <td><p>{{element.id}}</p></td>
+                    <td>
+                        <a href="/edit/{{element.id}}">edit</a>
+                        <a href="/delete/{{element.id}}">delete</a>
+                    </td>
+                                   </tr>
+                
+            {% endfor %}     
+        </table>
+        {%else%}
+            <p>something wrong</p>
+    {%endif%}
+</body></html>
